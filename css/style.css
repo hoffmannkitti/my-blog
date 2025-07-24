@@ -3,7 +3,7 @@ body {
   line-height: 1;
   margin: 0;
   padding: 0;
-  background-color: #f3e8ff;
+  background-color: #f4f0fc;
 }
 .top-bar {
   display: flex;
@@ -29,7 +29,7 @@ nav {
   display: flex;
   gap: 15px;
   background: linear-gradient(145deg, #eae0f5, #fbcfe8); /* Finom színátmenet */
-  padding: 12px 20px;
+  padding: 10px 20px;
   border-radius: 5px;
   align-items: center;
   width: 100%;
@@ -40,13 +40,13 @@ nav a {
   padding: 10px 16px;
   text-decoration: none;
   font-weight: 600;
-  border-radius: 8px;
+  border-radius: 4px;
   transition: all 0.3s ease;
-  background: #f5f3ff;
+  background: #eeecfc;
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
 }
 nav a:hover {
-  background: #cbf7fc;
+  background: #d6f9fd;
   color: #9d174d;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transform: translateY(-2px);
