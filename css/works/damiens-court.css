@@ -78,11 +78,32 @@ footer {
 .intro-flex img {
   width: 300px;
   height: auto;
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 .intro-text p {
   font-size: 1rem;
   text-align: justify;
   margin: 0;
+}
+
+.intro-container a:hover {
+  background: #d6f9fd;
+  color: #9d174d;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+.intro-container a {
+  background: #edfcfa;
+  color: #6c05bb;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+}
+.intro-container .meta {
+  color: #777;
+  font-size: 0.9em;
 }

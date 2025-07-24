@@ -70,6 +70,13 @@ nav a:hover {
   color: #777;
   font-size: 0.9em;
 }
+.post a {
+  color: #777;
+  font-size: 0.9em;
+}
+.post a:hover {
+  color: #ff9b9b;
+}
 footer {
   background: #fbcfe8;
   color: #000000;
