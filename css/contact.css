@@ -51,25 +51,6 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-.post {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.post h2 {
-  margin-top: 0;
-}
-.post .meta {
-  color: #777;
-  font-size: 0.9em;
-}
 footer {
   background: #fbcfe8;
   color: #000000;
@@ -78,24 +59,4 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-}
-.post {
-  display: flex;
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  align-items: flex-start; /* ha kell, hogy a kép a szöveg tetejéhez igazodjon */
-}
-.post-image {
-  width: 130px;       /* vagy ahogy szeretnéd */
-  height: auto;
-  margin-right: 20px; /* térköz a kép és a szöveg között */
-  border-radius: 4px;
-  object-fit: cover;  /* szép méretezés, ha kell */
-}
-
-.post-content {
-  flex: 1; /* a szöveg foglalja el a maradék helyet */
 }

@@ -51,25 +51,6 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   transform: translateY(-2px);
 }
-.container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
-}
-.post {
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-.post h2 {
-  margin-top: 0;
-}
-.post .meta {
-  color: #777;
-  font-size: 0.9em;
-}
 footer {
   background: #fbcfe8;
   color: #000000;
@@ -79,23 +60,76 @@ footer {
   bottom: 0;
   width: 100%;
 }
-.post {
-  display: flex;
-  background: #fff;
-  margin-bottom: 20px;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  align-items: flex-start; /* ha kell, hogy a kép a szöveg tetejéhez igazodjon */
+.intro-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  line-height: 1.8;
 }
-.post-image {
-  width: 130px;       /* vagy ahogy szeretnéd */
-  height: auto;
-  margin-right: 20px; /* térköz a kép és a szöveg között */
-  border-radius: 4px;
-  object-fit: cover;  /* szép méretezés, ha kell */
+.intro-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1f0038;
+  text-align: center;
 }
 
-.post-content {
-  flex: 1; /* a szöveg foglalja el a maradék helyet */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-content {
+  padding: 16px;
+}
+
+.card-content h3 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+  color: #444;
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
 }
